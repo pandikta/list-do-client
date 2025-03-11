@@ -1,0 +1,22 @@
+user : attendance_dpsfg
+pass : E7u8cYap3r2gaJq01mayOgKN
+host : snftp.dataon.com
+port : 2222
+
+
+credential login :
+dpsfg
+dpsfg
+Ungasan!234
+
+Dear Pak Praba,
+
+Dikarenakan DTP ini perhitungan current ( bulan berjalan ) berikut penjelasnya :
+Untuk nilai DTP itu perhitunganya current, untuk case ini berarti hanya pendapatan bruto di bulan desember saja.
+Untuk Pajak di bulan desember sifatnya final tidak menggunakan current lagi karena sudah akhir tahun.
+Jadi saya ambil contoh dari data yang paling bawah, untuk DTPnya di menghitung penghasilan bruto desmber saja, sehingga mendapatkan nilai DTP desember sebesar 446.721. Namun untuk pajaknya dia menghitung secara final. sehingga dapat lah total pajak ybs dalam setahun yaitu sebesar 1.039.850 , seteah di potong dengan pajak yang sudah di bayarkan di bulan2 sebelumnya tersisa 645.150 yang harus di bayarkan. Dari situlah total perbedaan pajak desember dengan DTP desember.
+
+Regards,
+
+Dwi Yahya Ramdani,
+Software Maintenance HRIS Sunfish.
