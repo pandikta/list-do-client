@@ -1,8 +1,8 @@
 // Simpan Secret Key dalam Base64 untuk menghindari hardcode langsung
 const ENCODED_SECRET_KEY = "Y29iYWNvYmExMjM=";
 const GITHUB_USERNAME = "pandikta"; 
-const GITHUB_REPO = "list-do-client";
-const GITHUB_PAT = "Z2l0aHViX3BhdF8xMUFNNDNLRlkwcVB6eEFrMlJUVTZXXzc4TThPWFVuYkFPQ1V3a25xcjNJd1pGb2F1Mkt0TUlIbE80cjI2TTNtUmtLSkNFV0JETWJUOTBJRE1V";
+const GITHUB_REPO = "listfile";
+const GITHUB_PAT = "Z2hwX3dlQnk5enBSQkdiZkd0NWFPaWxEdk5MQ1prQnlZaDJERVJOZw==";
 
 // localStorage.clear();
 
