@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <title>Credential List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0c2149;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #auth-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            margin: auto;
+            width: 60%;
+            background: #222;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+
+        button.copy-btn {
+            background: #0f9d58;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .input-container {
+            position: relative;
+            display: inline-block;
+            width: 90%;
+        }
+
+        input {
+            /* width: 100%; */
+            padding: 8px;
+            /* padding-right: 30px; */
+            margin: 10px 0;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="auth-container">
+        <h2>Enter Secret Key</h2>
+        <div class="input-container">
+            <input type="password" id="secret-key" placeholder="Enter key">
+            <span class="toggle-password" onclick="togglePassword()">
+                <i class="fa fa-eye" id="eye_open" style="font-size:24px;color:black"></i>
+                <i class="fa fa-eye-slash" id="eye_slash" style="font-size:24px;color:black;display: none;"></i>
+            </span>
+        </div>
+        <button onclick="checkKey()">Submit</button>
+        <p id="error-msg"></p>
+    </div>
+
+    <div id="content-container" class="hidden">
+        <h2>🔑 List Credential</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cred</th>
+                    <th>Link</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="credential-list"></tbody>
+        </table>
+    </div>
+
+    <script src="tes.js"></script>
+</body>
+</html>
