@@ -11,8 +11,9 @@ const EXPIRATION_TIME = 5 * 60 * 1000; // 5 menit dalam milidetik
 function setWithExpiry(key, value) {
     const now = new Date().getTime();
     const item = { value, expiry: now + EXPIRATION_TIME };
+    let testing = 1
     localStorage.setItem(key, JSON.stringify(item));
-    
+
 }
 
 function getWithExpiry(key) {
